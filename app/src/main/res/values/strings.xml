@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cafeteria</string>
+    <string name="welcome_to_maid_coffee">Welcome to: Maid Coffee</string>
+    <string name="todo">TODO</string>
+    <string name="your_cappucinos">Your Cappucinos</string>
+    <string name="add_cappucino">Add Cappucino</string>
+    <string name="_0">0</string>
+    <string name="add_milky_coffee">Add Milky Coffee</string>
+    <string name="add_just_coffee">Add Just Coffee</string>
+</resources>
