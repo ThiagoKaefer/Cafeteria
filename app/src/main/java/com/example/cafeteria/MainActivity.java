@@ -59,11 +59,11 @@ public class MainActivity extends AppCompatActivity {
         email();
     }
     public void email() {
-        Intent intent = new Intent(Intent.ACTION_SEND);
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
         intent.putExtra(Intent.EXTRA_EMAIL, "cafe.do.ifc.concordia@gmail.com");
         intent.putExtra(Intent.EXTRA_SUBJECT, "Encomenda de Café");
         intent.putExtra(Intent.EXTRA_TEXT, "Desejo comprar: "+cont+" Cappucinos, "+cont2+" Mylk Coffess e "+cont3+" Cafés normais");
-
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
@@ -71,36 +71,6 @@ public class MainActivity extends AppCompatActivity {
         cont2 = 0;
         cont3 = 0;
         preoto = 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 }
